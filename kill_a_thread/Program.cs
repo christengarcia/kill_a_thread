@@ -22,5 +22,18 @@ namespace kill_a_thread
         }
     }
 
+    public class ThreadingClass
+    {
+        private bool flag = false;
+        public void DoStuff()
+        {
+            while (!flag)
+            {
+                Console.WriteLine("Thread is Still Working");
+                Thread.Sleep(1000);
+            }
+        }
 
+
+    }
 }
