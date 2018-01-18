@@ -34,6 +34,9 @@ namespace kill_a_thread
             }
         }
 
-
+        public void Stop()
+        {
+            flag = true;
+        }
     }
 }
